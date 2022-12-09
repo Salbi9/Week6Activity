@@ -1,0 +1,7 @@
+C:\Users\Dinesh\source\repos\Week4Activity\Week4Activity\bin\Debug\Week4Activity.exe.config
+C:\Users\Dinesh\source\repos\Week4Activity\Week4Activity\bin\Debug\Week4Activity.exe
+C:\Users\Dinesh\source\repos\Week4Activity\Week4Activity\bin\Debug\Week4Activity.pdb
+C:\Users\Dinesh\source\repos\Week4Activity\Week4Activity\obj\Debug\Week4Activity.csproj.AssemblyReference.cache
+C:\Users\Dinesh\source\repos\Week4Activity\Week4Activity\obj\Debug\Week4Activity.csproj.CoreCompileInputs.cache
+C:\Users\Dinesh\source\repos\Week4Activity\Week4Activity\obj\Debug\Week4Activity.exe
+C:\Users\Dinesh\source\repos\Week4Activity\Week4Activity\obj\Debug\Week4Activity.pdb
