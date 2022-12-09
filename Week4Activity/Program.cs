@@ -70,7 +70,7 @@ namespace SydneyHotel
             Console.WriteLine("\n--------------------------------------------------------------------\n");
 
             ReservationDetail[] rd = new ReservationDetail[n];
-            double total = 0;
+            //double total = 0;
 
             for (int i = 0; i < n; i++)
             {
@@ -104,9 +104,9 @@ namespace SydneyHotel
                 Console.WriteLine(now.ToString("hh:mm:ss tt"));
                 Console.WriteLine("\n--------------------------------------------------------------------");
 
-                total = total + rd[i].totalPrice;                
+                //total = total + rd[i].totalPrice;                
             }
-            Console.WriteLine("The total spendings of all customers is: ${0}", total);
+            //Console.WriteLine("The total spendings of all customers is: ${0}", total);
 
             var (minPrice,minindex) = rd.Select(x=>x.totalPrice).Select((m,i) => (m,i)).Min();
             var (maxPrice,maxindex) = rd.Select(x => x.totalPrice).Select((m, i) => (m, i)).Max();
