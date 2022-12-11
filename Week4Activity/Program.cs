@@ -10,7 +10,7 @@ namespace SydneyHotel
     {
         class ReservationDetail
         {
-            public string customerName { get; set; }
+            public string Name { get; set; }
             public int age { get; set; }
             public int nights { get; set; }
             public string roomService { get; set; }
@@ -77,7 +77,7 @@ namespace SydneyHotel
                 rd[i] = new ReservationDetail();
                 DateTime now = DateTime.Now;
                 Console.Write("Enter customer name: ");
-                rd[i].customerName=Console.ReadLine();
+                rd[i].Name=Console.ReadLine();
 
                 Console.Write("Enter your age: ");
                 rd[i].age = Convert.ToInt32(Console.ReadLine());
@@ -97,7 +97,7 @@ namespace SydneyHotel
                 rd[i].roomService=Console.ReadLine();
 
                 rd[i].totalPrice = Price(rd[i].nights, rd[i].roomService, rd[i].age);
-                Console.WriteLine($"The total price for {rd[i].customerName} is ${rd[i].totalPrice}");
+                Console.WriteLine($"The total price for {rd[i].Name} is ${rd[i].totalPrice}");
                 Console.WriteLine("\n--------------------------------------------------------------------");
                 Console.WriteLine("The date and time of this booking details is:");
                 Console.WriteLine(now.ToString("ddd MMM %d, yyyy"));
@@ -117,11 +117,11 @@ namespace SydneyHotel
             Console.WriteLine("\n\t\t\t\tSummary of reservation");
             Console.WriteLine("--------------------------------------------------------------------\n");
             Console.WriteLine("Name\t\tNumber of nights\t\tRoom service\t\tCharge");
-            Console.WriteLine($"{minrd.customerName}\t\t\t{minrd.nights}\t\t\t{minrd.roomService}\t\t\t{minrd.totalPrice}");
-            Console.WriteLine($"{maxrd.customerName}\t\t\t{maxrd.nights}\t\t\t{maxrd.roomService}\t\t\t{maxrd.totalPrice}");
+            Console.WriteLine($"{minrd.Name}\t\t\t{minrd.nights}\t\t\t{minrd.roomService}\t\t\t{minrd.totalPrice}");
+            Console.WriteLine($"{maxrd.Name}\t\t\t{maxrd.nights}\t\t\t{maxrd.roomService}\t\t\t{maxrd.totalPrice}");
             Console.WriteLine("\n--------------------------------------------------------------------\n");
-            Console.WriteLine($"The customer spending the most is {maxrd.customerName}: ${maxrd.totalPrice}");
-            Console.WriteLine($"The customer spending the least is {minrd.customerName}: ${minrd.totalPrice}");
+            Console.WriteLine($"The customer spending the most is {maxrd.Name}: ${maxrd.totalPrice}");
+            Console.WriteLine($"The customer spending the least is {minrd.Name}: ${minrd.totalPrice}");
 
             
             Console.WriteLine($"Press any key to continue....");
